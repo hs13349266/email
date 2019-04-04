@@ -1,0 +1,3 @@
+[2019-04-04T16:50:04.218] [INFO] http - ::1 - - "POST /sendEmail HTTP/1.1" 200 305 "" "PostmanRuntime/7.4.0"
+[2019-04-04T16:51:44.347] [ERROR] http - ::1 - - "POST /sendEmail HTTP/1.1" 500 37 "" "PostmanRuntime/7.4.0"
+[2019-04-04T16:53:33.640] [ERROR] http - ::1 - - "POST /sendEmail HTTP/1.1" 500 37 "" "PostmanRuntime/7.4.0"
