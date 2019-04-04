@@ -1,0 +1,10 @@
+#  vs.code   #
+#####################
+/.vscode/*
+.eslintrc.yml
+
+#  webstorm #
+#####################
+/.idea/*
+
+config.json
