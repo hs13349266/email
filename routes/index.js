@@ -20,7 +20,7 @@ router.post('/sendEmail', async (req, res, next) => {
         });
 
         // setup email data with unicode symbols
-        let mailOptions = req.body.mailOptions;
+        let mailOptions = JSON.parse(req.body.mailOptions);
         if (!mailOptions) {
             res.status(500).send({err: "缺失请求参数"});
             return;
