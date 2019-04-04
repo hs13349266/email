@@ -1,5 +1,8 @@
 {
   "appenders": {
+    "console":{
+      "type" : "console"
+    },
     "access": {
       "type": "dateFile",
       "filename": "logs/access.log",
@@ -13,10 +16,10 @@
       "numBackups": 5
     },
     "errorFile": {
-      "type": "file",
+      "type": "dateFile",
       "filename": "logs/errors.log",
-      "maxLogSize": 10485760,
-      "numBackups": 3
+      "daysToKeep": 60,
+      "pattern": "-yyyy-MM-dd.log"
     },
     "errors": {
       "type": "logLevelFilter",
@@ -25,7 +28,7 @@
     }
   },
   "categories": {
-    "default": { "appenders": [ "app", "errors" ], "level": "DEBUG" },
+    "default": { "appenders": [ "app", "errors", "console" ], "level": "INFO" },
     "http": { "appenders": [ "access"], "level": "DEBUG" }
   }
 }
