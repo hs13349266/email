@@ -18,7 +18,7 @@ router.post('/sendEmail', async (req, res, next) => {
                 pass: config.pass
             }
         });
-
+        console.log(req.body);
         // setup email data with unicode symbols
         let mailOptions = JSON.parse(req.body.mailOptions);
         if (!mailOptions) {
